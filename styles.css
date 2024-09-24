@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
@@ -20,17 +19,17 @@ p{
     line-height: 36px;
     text-align: left;
     color: white;
-    margin: 0;
+    margin: 0px;
 }
 
-.conteudo-total {
+.conteudo-total-registrar {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     width: 608px;
     height: auto; /* Adjust to fit content */
-    top: 31px;
+    
 }
 
 .logo {
@@ -44,7 +43,7 @@ p{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Center align forms */
     padding: 60px;
     gap: 20px;
     width: 608px;
@@ -56,6 +55,7 @@ p{
 .input-container {
     position: relative;
     width: 488px;
+    margin-bottom: 20px;
 }
 
 .input-container input {
@@ -68,7 +68,6 @@ p{
     color: rgba(255, 255, 255, 0.35);
     font-family: 'Inter';
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 /* Placeholder styles */
@@ -80,8 +79,10 @@ p{
 .confirmacao {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    background-color: none;
+    align-items: left; /* Center align the terms checkbox */
 }
+
 
 .termos-label {
     color: white;
@@ -89,31 +90,38 @@ p{
     font-family: 'Inter';
 }
 
-.botao-cadastrar, .botao-login {
-    padding: 10px 20px;
-    font-family: Inter;
-    font-size: 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 20px;
+.botao-container {
+    display: flex;
+    flex-direction: column; /* Alinha os botões em coluna */
+    align-items: center; /* Centraliza os botões */
+    width: 100%; /* Garante que ocupe todo o espaço */
 }
 
 .botao-cadastrar {
     background: rgba(255, 209, 0, 1);
     color: rgba(14, 14, 14, 1);
-    width: 100%;
-    max-width: 488px;
+    width: 520px;  
     height: 50px;
     border: none;
+    margin-top: 20px; 
+    font-family: Inter;
+    font-size: 24px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-.botao-login {
+.botao-fazerlogin {
     background: none;
     border: none;
     color: rgba(255, 209, 0, 1);
+    font-family: Inter;
     font-size: 20px;
-    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+
 }
-.botao-container{
-    text-align: center;
-}
+
