@@ -2,11 +2,18 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Title</title>
    <link type ="text/css" rel = "stylesheet" href="styles.css">
+   <style>
+    .hidden {
+        display: none; /* Esconde as seções */
+    }
+</style>
+<script src="script.js"></script>
 </head>
 <body>
-<!--<div class = "conteudo-total-registrar">   
+<div class = "conteudo-total-registrar">   
     <img src="images/logo-título.png" class="logo">
         <div class="forms">
         <div class = "conteudo"> 
@@ -47,36 +54,32 @@
             <button class="botao-cadastrar" onclick="">
                 Cadastrar
             </button>
-            <button class="botao-fazerlogin" onclick="">
+            <button class="botao-fazerlogin" id="FazerLogin">
                 Fazer Login
             </button>
         </div>
         </div>
     </div>
 </div> 
-</body>
-</html>-->
-<div class = conteudo-total-login> 
-    <img src="images/logo-Login.png" class="logo-login">
-    <div class ="login">
-        <div class = informacao-login>
-            <p>Email</p>
-            <div class="input-container-login">
-            <input type="email" placeholder="exemplo@gmail.com" required>   
-            </div>
-            <p>Senha</p>
-            <div class="input-container-login">
-            <input type="password" placeholder="Digite sua senha" required>
-            </div>
-            <span class="p1">Esqueci minha Senha</span> 
+<div class="conteudo-total-login"> 
+    <img src="images/logo-Login.png" class="logo-login" alt="Logo">
+    <div class="login-forms">
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="exemplo@gmail.com" required>
         </div>
-            <div class="botao-container-login">
-                <button class="botao-Login" onclick="">
-                    Login
-                </button>
-                <button class="botao-Registrar" onclick="">
-                    Registar
-                </button>
-            </div>
+        <div class="input-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" required>
+        </div>
+        <span class="Esqueceu">Esqueci minha Senha</span> 
+        <div class="button-group">
+            <button class="botao-login">Login</button>
+            <button class="botao-registrar" id="Registro">Registrar</button>
+        </div>
     </div>
 </div>
+
+
+</body>
+</html>
