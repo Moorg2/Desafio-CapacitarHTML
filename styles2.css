@@ -176,3 +176,32 @@ flex-grow: 0;
 .VerMais:hover{
     background-color: white;
 }
+.publicacao{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 48px;
+    bottom: 45px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    z-index: 2;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+.mais{
+    position: relative;
+    background: url(.png);
+    z-index: 3;
+    
+
+}
+
+.circulo {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 50%;
+    background: #FFD100;
+    z-index: 1;
+}
