@@ -4,12 +4,22 @@ html {
     background-repeat: no-repeat;
     height: 100%;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
 .home{
+    position: relative;
     width: 1440px;
     height: 1024px;
     background: rgba(14, 14, 14, 1);
 }
 .header{
+    display: flex;
+    align-items: left;
+    justify-content: left;
     width: 1440px;
     height: 100px;
     background: rgba(0, 0, 0, 0.5);
@@ -33,6 +43,7 @@ html {
     color: rgba(255, 255, 255, 1);
 
 }
+
 .curtida{
     width: 92.29px;
     height: 35.5px;
@@ -57,12 +68,25 @@ html {
     color: rgba(255, 255, 255, 1);
 
 }
+.interacao {
+    display: flex;
+    gap: 20px; 
+}
+
+.curtida, .comentario {
+    display: flex; 
+    align-items: center; 
+}
+
+.curtida img, .comentario img {
+    margin-right: 5px; 
+}
 .postFoto{
     width: 544.01px;
     height: 651.95px;
     margin-top: 60px;
     margin-left: 277px;
-    gap: 13.31px;
+    gap: 20px;
 }
 .p1{
     font-family: Inter;
@@ -74,10 +98,24 @@ html {
 
 }
 .QuemSomos{
+    position: absolute;
     width: 345px;
     height: 383px;
-    margin-top: 0px;
-    margin-left: 750px;
+    left: 957px;
+    top: 203px;
+}
+.informaçao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+
+    position: absolute;
+    width: 345px;
+    height: 316px;
+    left: 0px;
+    top: 0px;
 }
 
 .h1{
@@ -87,6 +125,10 @@ html {
     line-height: 22.19px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .descriçao{
@@ -97,6 +139,40 @@ html {
     line-height: 22.19px;
     text-align: left;
     gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 345px;
+    height: 260px;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
     
 }
 
+.VerMais{
+    width: 345px;
+    height: 42px;
+    top: 341px;
+    padding: 10px 29px 10px 29px;
+    gap: 10px;
+    border-radius: 10px;
+    background: rgba(255, 209, 0, 1);
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22.19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+}
+
+.VerMais:hover{
+    background-color: white;
+}
